@@ -1,0 +1,58 @@
+body {
+    background-color: #ecf0f1;
+    margin: 0; /*Para eliminar márgenes por defecto*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #34495e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer{
+    background-color: #34495e;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-text{
+    color: white;
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2{
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-top: 1.5rem;
+}
+
+p{
+    line-height: 1.6; /*Mejorar la legibilidad , para textos largos
+    1	Muy apretado, difícil de leer
+    1.2	Estándar mínimo
+    1.5 - 1.6	Legible y cómodo para lectura
+    2	Muy espacioso, estilo revista*/
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.destacado{
+    background-color: #f9e79f;
+    padding: 0.5rem;
+    border-left: 4px solid #f1c40f;
+}
+
+/* 1rem = El tamaño de  fuente html 16px
+    1rem = 16px
+    0.5rem = 8px
+    2rem = 32px
+    1. Accesibilidad = los valores en rem se ajusta automaticamente.
+    2. Consistencia = Permite mantener proporciones coherentes.
+    3. Escabilidad = Puedes cambiar la escala a la web
+*/
