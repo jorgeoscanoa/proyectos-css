@@ -1,0 +1,120 @@
+/* Centra todos los títulos y párrafos */
+h1, h2, p {
+    text-align: center;
+}
+
+/* Estilos generales del cuerpo del sitio */
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /* Fondo con imagen de granos de café */
+    background-size: cover; /*No duplica la imagen*/
+    font-family: sans-serif; /* Fuente principal */
+    padding: 20px; /* Espaciado interior del body */
+}
+
+/* Estilo del contenedor principal */
+.menu {
+    width: 80%; /* Ocupa el 80% del ancho del viewport */
+    background-color: burlywood; /* Color de fondo similar al papel */
+    margin-left: auto; /* Centrado horizontal */
+    margin-right: auto;
+    padding: 20px; /* Espacio interior */
+    max-width: 500px; /* Ancho máximo */
+}
+
+/* Estilos para los nombres de los productos */
+.flavor, .dessert {
+    text-align: left; /* Alineación izquierda */
+    width: 75%; /* 75% del espacio horizontal */
+}
+
+/* Estilos para los precios */
+.price {
+    text-align: right; /* Alineación derecha */
+    width: 25%; /* 25% del espacio horizontal */
+}
+
+.item {
+    display: flex; 
+}
+/* Estilo de los párrafos dentro de cada artículo */
+.item p {
+    display: inline-block; /* Elementos en línea con dimensiones */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/* Fuente especial para títulos */
+h1, h2 {
+    font-family: Impact, serif;
+}
+
+/* Estilo del texto "Est. 2020" */
+.established {
+    font-style: italic; /* Cursiva */
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+/* Estilo específico del título principal */
+h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Tamaño de fuente del título secundario */
+h2 {
+    font-size: 30px;
+}
+
+/* Línea horizontal de separación */
+hr {
+    height: 2px;
+    background-color: brown; /* Color marrón */
+    border-color: brown;
+}
+
+/* Línea final con espacio adicional arriba */
+.bottom-line {
+    margin-top: 25px;
+}
+
+/* Estilo del pie de página */
+footer {
+    font-size: 14px;
+}
+
+/* Enlaces (estado normal) */
+a {
+    color: black;
+}
+
+/* Enlaces visitados */
+a:visited {
+    color: black;
+}
+
+/* Enlaces al pasar el cursor */
+a:hover {
+    color: brown;
+}
+
+/* Enlaces activos (clic) */
+a:active {
+    color: brown;
+}
+
+/* Dirección en el pie de página */
+.address {
+    margin-bottom: 5px;
+}
+
+/* Estilo común para las imágenes */
+img {
+    display: block; /* Quita el espacio extra debajo */
+    margin-right: auto; /* Centrado horizontal */
+    margin-left: auto;
+    margin-top: -25px; /* Sube la imagen un poco */
+}
+
