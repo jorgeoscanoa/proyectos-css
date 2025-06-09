@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*body al 100%*/
+    height: 100vh;
+    /*Dividir el body en celdas*/
+    display: grid;
+    /*Definir cuantas columnas y de que ancho*/
+    /* 1fr es el tamaño restante*/
+    grid-template-columns: 1fr;
+    /*Definir cuantas filas y su alto*/
+    grid-template-rows: 10% 10% 1fr 10%;
+    /*Dar un nombre a las celdas por filas*/
+    grid-template-areas: 
+     "zheader"
+     "znav"
+     "zmain"
+     "zfooter";
+}
+
+/*Ultimo paso : Asginar cada area de la web a cada zona*/
+header{
+    grid-area: zheader;
+    background-color: black;
+    color: white;
+}
+
+nav{
+    grid-area: znav;
+    background-color: aquamarine;
+}
+
+main{
+    grid-area: zmain;
+    background-color: lightgreen;
+}
+
+footer{
+    grid-area: zfooter;
+    background-color: black;
+    color: yellow;
+}
