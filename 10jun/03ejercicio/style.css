@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;/* Hace el width/height
+    incluyan padding y border*/
+    margin: 0;
+    padding: 0;
+}
+
+.gallery img{
+    width: 100%;/*La imagen ocupa el 100% del ancho del cotenedor*/
+    max-width: 350px;/*Nunca sera mas ancha de 350px*/
+    height: 300px; /*Altura fija*/
+    object-fit: cover;/*Corta/escala la imagen
+    para cubrir todo el contenedor sin deformar*/
+    border-radius: 10px; /*Bordes redondeados 10px*/
+}
+
+body{
+    font-family: sans-serif;/*Fuente de todo el documento*/
+    background-color: #f5f6f7;
+}
+
+.header{
+    text-transform: uppercase;/*Convierte el texto en Mayusculas*/
+    padding: 35px;/*Relleno interno de 32 px en cada lado*/
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;/*Limea inferior de 4px
+    color naranja*/
+    text-align: center;
+}
+
+.gallery{
+    display: flex; /*Convierte .gallery en contendor flex*/
+    flex-direction: row;/*Alinea los items en fila (horizontal)*/
+    flex-wrap: wrap;/*Permite que los items salten a la siguiente linea*/
+    justify-content: center;/*Centra las imagenes horizontalmente*/
+    align-items: center;/*Centra las imagenes verticalmente dentro de cada fila*/
+    padding: 20px 10px; /*Relleno superior/inferior 20px, laterales 10px*/
+    max-width: 1400px;/*Ancho maximo del contendor 1400px*/
+    margin: 0 auto;/*Centra el .gallery en la pagina automaticamente*/
+    gap: 16px; /*Espacio de 16 px entre cada imagen*/
+}
+
+.gallery::after{
+    content: ""; /*Crea un pseudo-elemento vacio al final*/
+    width: 350px; /*Ancho igual al max-width de . gallery img
+            para rellenar la ultima fila*/
+}
+
+
+
