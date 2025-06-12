@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;/*Incluye padding y borde en ancho alto total*/
+    font-family: 'Poppins',sans-serif; /*Define fuente base para toda la pagina*/
+}
+
+/*Seccion principal ("hero") de la pagina*/
+.hero{
+    width: 100%;
+    min-height: 100vh; /*Altura minima igual a la altura de la ventana*/
+    background-image: url(/assets/images/back-image.png); /*imangen de fondo*/
+    background-position: center; /*Centra la imagen de fondo*/
+    background-size: cover;/*Cubre todo el contenedor, recortando si es necesario*/
+    padding: 10px 10%; /*Espacio interno 10px arriba y abajo, 10% izquierda a derecha*/
+    overflow: hidden; /*Oculta cualquier contenido que sobresalga*/
+    position: relative; /*Sirve como referencia para elementos posicionados dentro*/
+}
+
+/*Barra de navegacion*/
+
+nav{
+    padding: 10px 0; /*Espacio arriba y abajo de 10px*/
+    display: flex; /*Activa modelo flex para alinear elementos*/
+    align-items: center; /*Centra veticalmente los hijos*/
+    justify-content: space-between; /*Separa a los hijos al maximo a ambs extremos*/
+}
+
+/* Logo dentro de nav*/
+.logo{
+    width: 140px; /*Ancho fijo de 140px*/
+}
+
+/*Items de la lista de la navegacion*/
+nav ul li {
+    display: inline-block; /*Muestra los <li> en linea, como en bloques*/
+    list-style: none; /*Elimina viñetas de la lista*/
+    margin: 10px 15px; /*Margenes alrededor de cada item*/
+}
+
+/*Enlaces dentro de los items de navegación*/
+
+nav ul li a {
+    text-decoration: none; /*Elimina el subrayado*/
+    color: #333;
+    font-weight: 400; /*Grosor de la letra*/
+}
+
+/*Boton de login*/
+.logn-btn{
+    text-decoration: none; /*Sin subrayado*/
+    color: #333;
+    margin-right: 15px; /*Separacion a la derecha*/
+    font-weight: 400;
+}
+
+/*Botones principales (.btn)*/
+
+.btn{
+    display: inline-block; /*bloque en linea*/
+    text-decoration: none; /*sin subrayado*/
+    padding: 14px 40px; /*Relleno interno veritcal 14 px y horizontaal 40px*/
+    color: #fff;
+    background-image: linear-gradient(45deg, #df4881,#c430d7); /*Degradado diagola*/
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0; /*Esquina superior derecha sin redondeno*/
+    transition: 0.5s; /*Transicion suave para cambios*/
+}
+
+/*Contenedor de contenido dentro de .hero*/
+.content{
+    margin-top: 10%; /*Separacion superior relativa al contenedor padre*/
+    max-width: 600px; /*Ancho maximo de 600px*/
+}
+
+/*Titulo principal dentro de .content*/
+.content h1 {
+    font-size: 70px;
+    color: #222;
+}
+/*Parrafo descriptivo dentro de .content*/
+.content p {
+    margin: 10px 0 30px; /*Margenes : 10 px arriba , 0 px lados, 30px abajo*/
+    color: #333;
+    animation-delay: 0.5s; /*Retraso 0.5s antens de iniciar la animacion*/
+}
+
+.content .btn{
+    padding: 15px 80px; /*Relleno para destacar*/
+    font-size: 16px;
+    animation-delay: 1s; /*Retraso de 1s antes de iniciar animación*/
+}
+
+/*Efecto hover - cambiar redondeo de la esquina  al pasar*/
+
+.btn:hover{
+    border-top-right-radius: 30px;
+    background-image: linear-gradient(45deg, #3b82f6, #9333ea); /* ejemplo nuevo gradiente */
+}
+
+/*Imagen destacada dentro de .hero*/
+
+.features-img{
+    width: 530px;
+    position: absolute; /*Posicionamiento absoluto respeto a .hero*/
+    bottom: 0; /*Pegada al fondo del contenedor .hero*/
+    right: 10%; /*Separada un 10% del borde derecho*/
+}
+
+/*Variante animada de .feature-img*/
+.features-img anim{
+    animation-delay: 1.5s; 
+}
+
+.anim{
+    opacity: 0; /*Empieza invisible*/
+    transform: translateY(30px); /*Desplazado 30px hacia abajo*/
+    animation: moveup 0.5s linear forwards; /*Ejecuta la animacion "moveup*/
+}
+
+/*Definicion de la animacion moveup*/
+@keyframes moveup {
+    100%{
+        opacity: 1; /*Termina completamente visible*/
+        transform: translateY(0px);/*Termina en su posicion original*/
+    }
+}
+
+
+
+
